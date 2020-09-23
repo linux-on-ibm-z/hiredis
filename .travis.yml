@@ -38,6 +38,7 @@ before_script:
 
 addons:
   apt:
+    update: true
     packages:
     - libc6-dbg
     - libc6-dev
