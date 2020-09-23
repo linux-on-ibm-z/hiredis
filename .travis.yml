@@ -141,5 +141,4 @@ jobs:
             - gcc-multilib
             - g++-multilib
             - libssl-dev
-            - libssl-dev:i386
             - valgrind
