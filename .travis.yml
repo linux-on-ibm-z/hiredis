@@ -129,14 +129,14 @@ jobs:
           cmake .. -G Ninja -DCMAKE_BUILD_TYPE=Release -DENABLE_EXAMPLES=ON '&&' ninja -v
         - ./hiredis-test.exe
         
-     - os: linux
-       arch: s390x
-       addons:
-         apt:
-           packages:
-             - libc6-dbg
-             - libc6-dev
-             - gcc-multilib
-             - g++-multilib
-             - libssl-dev
-             - valgrind
+    - os: linux
+      arch: s390x
+      addons:
+        apt:
+          packages:
+            - libc6-dbg
+            - libc6-dev
+            - gcc-multilib
+            - g++-multilib
+            - libssl-dev
+            - valgrind
