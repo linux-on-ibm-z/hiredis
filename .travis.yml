@@ -15,10 +15,11 @@ dist: bionic
 
 branches:
   only:
-    - staging
-    - trying
-    - master
-    - /^release\/.*$/
+   # - staging
+   # - trying
+   # - master
+   # - /^release\/.*$/
+     - s390x-travis
 
 install:
     - if [ "$TRAVIS_COMPILER" != "mingw" ]; then
