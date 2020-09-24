@@ -147,7 +147,7 @@ jobs:
             - valgrind
     - os: linux
       arch: s390x
-	  env:
+      env:
         - BITS="64"
       compiler: gcc
       addons:
