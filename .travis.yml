@@ -176,6 +176,7 @@ jobs:
             - libc6-dbg
             - libc6-dev
             - gcc-multilib
+            - gcc-4.8
             - g++-multilib
             - libssl-dev
             - valgrind
