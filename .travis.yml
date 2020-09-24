@@ -128,6 +128,9 @@ jobs:
         
     - os: linux
       arch: s390x
+	    env:
+        - BITS="32"
+      compiler: gcc
       addons:
         apt:
           update: true
@@ -142,3 +145,62 @@ jobs:
             - g++-multilib
             - libssl-dev
             - valgrind
+    - os: linux
+      arch: s390x
+	  env:
+        - BITS="64"
+      compiler: gcc
+      addons:
+        apt:
+          update: true
+          packages:
+            - libc6-dbg
+            - libc6-dev
+            - gcc-multilib
+            - g++-multilib
+            - libssl-dev
+            - valgrind
+            - gcc-multilib
+            - g++-multilib
+            - libssl-dev
+            - valgrind
+    - os: linux
+      arch: s390x
+      env:
+        - BITS="32"
+      compiler: clang
+      addons:
+        apt:
+          update: true
+          packages:
+            - libc6-dbg
+            - libc6-dev
+            - gcc-multilib
+            - g++-multilib
+            - libssl-dev
+            - valgrind
+            - gcc-multilib
+            - g++-multilib
+            - libssl-dev
+            - valgrind
+    - os: linux
+      arch: s390x
+      env:
+        - BITS="64"
+      compiler: clang
+      addons:
+        apt:
+          update: true
+          packages:
+            - libc6-dbg
+            - libc6-dev
+            - gcc-multilib
+            - g++-multilib
+            - libssl-dev
+            - valgrind
+            - gcc-multilib
+            - g++-multilib
+            - libssl-dev
+            - valgrind
+
+
