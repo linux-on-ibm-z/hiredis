@@ -128,7 +128,7 @@ jobs:
         
     - os: linux
       arch: s390x
-	    env:
+      env:
         - BITS="32"
       compiler: gcc
       addons:
